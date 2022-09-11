@@ -114,6 +114,18 @@ ul {
 
 .current-tab {
   color: var(--accent-color);
+  position: relative;
+}
+
+.current-tab::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contacts-list {
@@ -261,7 +273,6 @@ ul {
 
 .services-description {
   position: absolute;
-  left: 0;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
