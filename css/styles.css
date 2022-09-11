@@ -251,8 +251,30 @@ ul {
   gap: 30px;
 }
 
+.services-list-item {
+  position: relative;
+}
+
 .services-list-item > img {
   display: block;
+}
+
+.services-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+}
+
+.services-description > p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  padding: 27px 0;
 }
 
 .team {
